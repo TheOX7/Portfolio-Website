@@ -107,7 +107,7 @@ with st.container():
                         <b>Achievements</b> 🎖️ 
                         <br>
                         ○ Favourite Dashboard Winner - Pedas (Pesta Data Nasional 2023) -
-                        <a href="https://public.tableau.com/app/profile/marselius.agus.dhion/viz/Superstore_16986572902350/Dashboard">Tableau Dashboard</a> |
+                        <a href="https://public.tableau.com/app/profile/mad27/viz/Superstore_16986572902350/Final-Dashboard">Tableau Dashboard</a> |
                         <a href="https://drive.google.com/file/d/1ER6NIrTQ5TF7oXmdfJx73ZbYLeTkFGov/view?usp=sharing">Certificate</a>
                         <br>
                         ○ <b>Dean List:</b> Even Semester 21/22 | Odd Semester 22/23 | Even Semester 22/23 | Odd Semester 23/24
