@@ -95,7 +95,7 @@ with st.container():
             st.markdown("""<div class="rounded-box">
                         <b>Education</b> 🎓 
                         <br>
-                        6th Semester - Information Systems - <a href="https://drive.google.com/file/d/1W1GgXxXG_rfTkxrP-Gab3f8-w0Er4-W6/view?usp=sharing">GPA: 3.94</a>
+                        6th Semester - Information Systems - <a href="https://drive.google.com/file/d/1wDE2poHLa4Nt-jfRlqpSH6j3EzocdxPo/view?usp=sharing">GPA: 3.93</a>
                         <br>
                         Universitas Kristen Maranatha
                         </div>""", 
