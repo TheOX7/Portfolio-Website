@@ -237,10 +237,9 @@ with st.container():
     """, unsafe_allow_html=True)
     horizontal_line()
     
-    col_vid, col_exp = st.columns([9,10])
+    col_vid, col_exp = st.columns([1,2])
     with col_vid:
-        # st.markdown(f'<iframe width="550" height="350" src="https://www.youtube.com/embed/7BpAbtECcPs" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
-        logo_link("https://fpl-rec-selection-lineup.streamlit.app", "image/fpl-rec.png", 800)
+        st.markdown(f'<iframe width="550" height="350" src="https://www.youtube.com/embed/XtqkC0qYQXA" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
         enter()
     with col_exp:
         st.subheader('Explanation', divider='gray')
