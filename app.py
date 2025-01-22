@@ -32,6 +32,15 @@ st.markdown("""
         <b>Marselius Agus Dhion - Portfolio</b>
     </div>
 """, unsafe_allow_html=True)
+
+st.markdown("""
+    <div style='text-align: center; font-size:20px;'>
+        <a href="#internship-experiences" style='text-decoration: none;'>Intern Experiences</a> | 
+        <a href="#projects" style='text-decoration: none;'>Projects</a> | 
+        <a href="#thesis" style='text-decoration: none;'>Thesis</a>
+    </div>
+""", unsafe_allow_html=True)
+
 horizontal_line()
 
 with st.container():
@@ -41,7 +50,7 @@ with st.container():
     col_img, col_exp = st.columns([1, 5])
     
     with col_img:
-        st.image('image/img-bg.png', use_column_width=False, width=270)
+        st.image('image/img-bg.png', width=270)
         
         st.markdown("""
             <div style='text-align: center; font-size:20px'>
@@ -50,7 +59,7 @@ with st.container():
                 Data Enthusiast
             </div>
         """, unsafe_allow_html=True)
-         
+                 
     with col_exp:
         # st.markdown("""<div style='font-size:36px'>About Me</div>""", unsafe_allow_html=True)
         colored_header(
@@ -80,6 +89,7 @@ with st.container():
                 }
             </style>
         """
+                
         with col_exp_left_1:
             st.markdown(style, unsafe_allow_html=True)
             st.markdown("""<div class="rounded-box">
@@ -95,7 +105,7 @@ with st.container():
             st.markdown("""<div class="rounded-box">
                         <b>Education</b> 🎓 
                         <br>
-                        7th Semester - Information Systems - <a href="https://drive.google.com/file/d/1wDE2poHLa4Nt-jfRlqpSH6j3EzocdxPo/view?usp=sharing">GPA: 3.93</a>
+                        Unofficial Undergraduate - Information Systems - <a href="https://drive.google.com/file/d/1wDE2poHLa4Nt-jfRlqpSH6j3EzocdxPo/view?usp=sharing">GPA: 3.93</a>
                         <br>
                         Universitas Kristen Maranatha
                         </div>""", 
@@ -185,7 +195,7 @@ with st.container():
                 <ul>
                     <li><b>MySkill: Data Analysis Bootcamp (Oct - Nov 2022)</b>
                         <ul>
-                            <li> Skills Gained → Python, PostgreSQL, and Looker Studio </li>
+                            <li> Skills Gained → Python, PostgreSQL, Looker Studio, Clustering, & Customer Segmentation </li>
                             <li> I become as one of the top ten students due to the excellence of my capstone project. </li>
                             <li> Project → <a href="https://lookerstudio.google.com/reporting/cd26e7aa-e114-4bcb-81b0-ca98ed97ec73">Looker Studio Dashboard</a> | 
                                            <a href="https://github.com/TheOX7/Data-Analytics-Bootcamp-MySkill-">Github Repository</a> 
@@ -195,7 +205,7 @@ with st.container():
                     </li>
                     <li><b>DQLab: Tetris Batch 3 (May - Jun 2023)</b>
                         <ul>
-                            <li> Skills Gained → Python, PostgreSQL, and ETL (Extract, Transform, & Load), & Streamlit </li>
+                            <li> Skills Gained → Python, PostgreSQL, Pentaho for ETL (Extract, Transform, & Load), & Streamlit </li>
                             <li> Project → <a href="https://pl-2022-2023.streamlit.app">Streamlit App Link</a> | 
                                            <a href="https://github.com/TheOX7/Premier-League-Streamlit-Web-App">Github Repository</a> 
                             </li>
@@ -204,7 +214,7 @@ with st.container():
                     </li>
                     <li><b>Kelas.com: Data Science Bootcamp</b>
                         <ul>
-                            <li> Skills Gained → Python, MySQL, & Git </li>
+                            <li> Skills Gained → Python, MySQL, Tensorflow, Deep Learning, & Git </li>
                             <li> Project → <a href="https://github.com/TheOX7/Final-Proyek-Data-Science-Kelas.com">Github Repository</a> | 
                                            <a href="https://drive.google.com/file/d/1Bfs3rl_KDR3ZoICGrBOzH_q3L3hpsUnt/view?usp=sharing">Report Card</a> 
                             </li>
@@ -217,6 +227,71 @@ with st.container():
 enter(); enter(); enter()
      
 with st.container():
+    st.markdown("<a id='thesis'></a>", unsafe_allow_html=True)
+    horizontal_line()
+    st.markdown("""
+        <div style='text-align: center; font-size:36px'>
+            <b>Thesis</b>: 
+            <b style='font-size: 30px'>Fantasy Premier League Rec. Starting Lineup using Regression Function Optimization</b> 
+        </div>
+    """, unsafe_allow_html=True)
+    horizontal_line()
+    
+    col_vid, col_exp = st.columns([9,10])
+    with col_vid:
+        # st.markdown(f'<iframe width="550" height="350" src="https://www.youtube.com/embed/7BpAbtECcPs" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
+        logo_link("https://fpl-rec-selection-lineup.streamlit.app", "image/fpl-rec.png", 800)
+        enter()
+    with col_exp:
+        st.subheader('Explanation', divider='gray')
+        st.markdown("""
+                    <li>
+                        Scraped FPL player stats datasets from the official Premier League website using Power Automate for every single gameweek.  
+                    </li>
+                    <li>
+                        Predicted the FPL player's expected total points for the upcoming gmeweek in 2024/25 using Random Forest (created for each player's 
+                        position and a general (all positions) model), with the per-position model achieving better performance, showing a Mean Absolute Error of 1.27 and an R-Squared of 81.15.
+                    </li>
+                    <li>
+                        Optimized FPL recommended starting lineup using PuLP to find the best solution based on several constraints from 
+                        <a href="https://fantasy.premierleague.com/help/rules" target="_blank" style="text-decoration: none">
+                            FPL rules
+                        </a> 
+                        , such as a maximum starting lineup cost of £100.
+                    </li>
+                    <li>
+                        Created a website using Streamlit to display stats and the FPL recommended starting lineup for the upcoming gameweek.
+                    </li>
+                    <li>
+                        Implement a paired t-test to validate the starting lineup recommendation for the 2024/25 season for each gameweek to 
+                        determine whether the differences between predicted and actual total points are statistically significant.
+                    </li>
+                    <li>
+                        Currently in the process of creating a paper for publication in 
+                        <a href="https://journals.sagepub.com" target="_blank" style="text-decoration: none">
+                            Sage Journals
+                        </a> 
+                        and 
+                        <a href="https://journal.maranatha.edu/index.php/jutisi" target="_blank" style="text-decoration: none">
+                            JuTiSi Maranatha
+                        </a>.
+                    </li>
+
+                    <li>
+                        <b>Related Links: </b>
+                        <a href="https://fpl-rec-selection-lineup.streamlit.app">Streamlit App</a> | 
+                        <a href="https://github.com/theox7/best-team-selection-fpl">Github Repository</a> | 
+                        <a href="https://drive.google.com/file/d/1Vcv9yHmfX8p-k5TAurNOaBR252LpOYwT/view?usp=sharing">Thesis Paper</a>
+                    </li>
+                    """, unsafe_allow_html=True)
+    
+    enter(); enter(); enter()
+
+
+     
+     
+with st.container():
+    st.markdown("<a id='internship-experiences'></a>", unsafe_allow_html=True)
     horizontal_line()
     st.markdown("""
         <div style='text-align: center; font-size:36px'>
@@ -294,7 +369,8 @@ with st.container():
                         ○ Developed an ARIMA Time Series analysis modelto predict daily total product sales. <br>
                         ○ Designed and created a Tableau dashboard to visualize monthly total quantity, daily total revenue, the number of 
                         products sold per product, and total revenue per Kalbe's store/branch. <br>
-                        ○ Created a clustering model to categorize custome
+                        ○ Created a clustering model to categorize customers into three clusters based on total transactions, 
+                        number of products purchased, and expenditure.
                         """, unsafe_allow_html=True)
 
             enter()
@@ -314,6 +390,7 @@ with st.container():
 enter(); enter(); enter()
 
 with st.container():
+    st.markdown("<a id='projects'></a>", unsafe_allow_html=True)
     horizontal_line()
     st.markdown("""
         <div style='text-align: center; font-size:36px'>
