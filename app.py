@@ -34,10 +34,10 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("""
-    <div style='text-align: center; font-size:20px;'>
-        <a href="#internship-experiences" style='text-decoration: none;'>Intern Experiences</a> | 
+    <div style='text-align: center; font-size:20px;'>|
+        <a href="#internship-experiences" style='text-decoration: none;'>Internship Experiences</a> | 
         <a href="#projects" style='text-decoration: none;'>Projects</a> | 
-        <a href="#thesis" style='text-decoration: none;'>Thesis</a>
+        <a href="#thesis" style='text-decoration: none;'>Thesis</a> |
     </div>
 """, unsafe_allow_html=True)
 
@@ -105,7 +105,7 @@ with st.container():
             st.markdown("""<div class="rounded-box">
                         <b>Education</b> 🎓 
                         <br>
-                        Unofficial Undergraduate - Information Systems - <a href="https://drive.google.com/file/d/1wDE2poHLa4Nt-jfRlqpSH6j3EzocdxPo/view?usp=sharing">GPA: 3.93</a>
+                        Unofficial Undergraduate - Information Systems - <a href="https://drive.google.com/file/d/1RqODtLrZc3vFLELQfhP4mOs-ydSi3ib9/view?usp=sharing">GPA: 3.94</a>
                         <br>
                         Universitas Kristen Maranatha
                         </div>""", 
@@ -281,6 +281,7 @@ with st.container():
                         <a href="https://fpl-rec-selection-lineup.streamlit.app">Streamlit App</a> | 
                         <a href="https://github.com/theox7/best-team-selection-fpl">Github Repository</a> | 
                         <a href="https://drive.google.com/file/d/1Vcv9yHmfX8p-k5TAurNOaBR252LpOYwT/view?usp=sharing">Thesis Paper</a>
+                        <a href="https://drive.google.com/file/d/1Aizz9Rxt1L6BxP0hu3gha7YAdomyDWTo/view?usp=sharing">Journal Publication (Ongoing)</a>
                     </li>
                     """, unsafe_allow_html=True)
     
